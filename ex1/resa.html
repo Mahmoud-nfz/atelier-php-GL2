@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwichs</title>
+</head>
+<body>
+    <form name="sandwich" action="http://localhost:8000/recap.php" method="post" enctype="multipart/form-data">
+        <label for="nom">Nom : </label>
+        <input type="text" id="nom" name="nom">
+        <br><br>
+        <label for="prenom">Prenom : </label>
+        <input type="text" id="prenom" name="prenom">
+        <br><br>
+        <label for="nbsands">Nombre des sandwichs</label>
+        <input type="number" name="nbsands" id="nbsands">
+        <br><br>
+        <label for="adresse">Adresse : </label>
+        <textarea name="adresse" id="adresse" cols="30" rows="10"></textarea>
+        <br><br>
+        <label for="typesand">Type des sandwitchs</label>
+        <select name="typesand" id="typesand">
+            <option value="viande">viande</option>
+            <option value="poulet">poulet</option>
+            <option value="escalope">escalope</option>
+        </select>
+        <br><br>
+        <label for="harissa">Harissa</label>
+        <input type="checkbox" name="harissa">
+        <label for="salade">Salade</label>
+        <input type="checkbox" name="salade">
+        <label for="mayo">Mayo</label>
+        <input type="checkbox" name="mayo">
+        <br><br>
+        <label for="cin">CIN :</label>
+        <input type="file" name="cin" id="cin">
+
+
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

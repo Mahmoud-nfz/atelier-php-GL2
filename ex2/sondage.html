@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondage</title>
+</head>
+<body>
+    <h2>Quel est votre evaluation?</h2>
+    <form action="http://localhost:8000/sondage.php" method="post">
+        <label for="bon">Bon :</label>
+        <input type="radio" name="avis" value="Bon" id="bon">
+        <label for="moyen">Moyen :</label>
+        <input type="radio" name="avis" value="Moyen" id="moyen">
+        <label for="mauvais">Mauvais :</label>
+        <input type="radio" name="avis" value="Mauvais" id="mauvais">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
